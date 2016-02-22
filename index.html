@@ -1,10 +1,86 @@
-<HTML>
-   <HEAD>
-      <TITLE>
-      My website
-      </TITLE>
-   </HEAD>
-<BODY>
-   <H1>Hi</H1>
-</BODY>
-</HTML>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <link id='favicon' rel='icon' type='image/png' href='#'>
+    <meta name='viewport' content='width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no'>
+    <meta name='keywords' content='python,java, identity management, sailpoint, development,backend, tim lydigsen, jiu jitsu, '>
+    <meta name='description' content='Tim Lydigsen is an experienced frontend and backend web developer.'>
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,500' rel='stylesheet' type='text/css'>
+    <style>
+      * { box-sizing: border-box }
+
+      html, body {
+        margin          : 0;
+        padding         : 0;
+        width           : 100vw;
+        height          : 100vh;
+        font-family     : Ubuntu, georgia, sans-serif;
+        font-size       : 30pt;
+        font-weight     : 300;
+        display         : flex;
+        align-items     : center;
+        justify-content : center;
+      }
+
+      @media (max-width: 600px) {
+        body { font-size : 16pt }
+      }
+
+      a {
+        color       : inherit;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      div {
+        text-align  : center;
+      }
+
+      em {
+        font-style    : normal;
+        font-weight   : 500;
+        display       : inline-block;
+        margin-right  : 0.5em;
+        border-bottom : 3px solid #ee7600;
+      }
+
+      ul, li {
+        margin     : 0;
+        padding    : 0;
+        list-style : none;
+        font-size  : 85%;
+        font-style : italic;
+        color      : #333;
+      }
+
+      li {
+        margin-top : 1.5em;
+        display    : inline-block;
+      }
+
+      li::after {
+        content : '•';
+        margin  : 0 0.25em 0 0.5em;
+        width   : 0;
+      }
+
+      li:last-child::after {
+        content : '';
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <em>Tim Lydigsen</em> Identity Management Specialist(SailPoint IdentityIQ), Python Lover, Tech Enthusiast and Jiu Jitsu Fighter
+      <ul>
+        <li><a href='https://github.com/tlydi/'>GitHub</a></li>
+        <li><a href='https://www.facebook.com/tim.lydigsen.3'>Facebook</a></li>
+      </ul>
+    </div>
+    <canvas id='canvas' width='16' height='16' style='display:none'></canvas>
+    <script src='js/plasma.js'></script>
+  </body>
+</html>
